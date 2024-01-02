@@ -1,4 +1,4 @@
-/*@tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -26,66 +26,7 @@
     --radius: 0.5rem;
   }
 
-  .dark {
-    --background: 224 71.4% 4.1%;
-    --foreground: 210 20% 98%;
-    --card: 224 71.4% 4.1%;
-    --card-foreground: 210 20% 98%;
-    --popover: 224 71.4% 4.1%;
-    --popover-foreground: 210 20% 98%;
-    --primary: 210 20% 98%;
-    --primary-foreground: 220.9 39.3% 11%;
-    --secondary: 215 27.9% 16.9%;
-    --secondary-foreground: 210 20% 98%;
-    --muted: 215 27.9% 16.9%;
-    --muted-foreground: 217.9 10.6% 64.9%;
-    --accent: 215 27.9% 16.9%;
-    --accent-foreground: 210 20% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 20% 98%;
-    --border: 215 27.9% 16.9%;
-    --input: 215 27.9% 16.9%;
-    --ring: 216 12.2% 83.9%;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}*/
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  :root {
-    --background: 270 30% 10%; /* Dark Purple Background */
-    --foreground: 270 15% 90%; /* Soft Purple Foreground */
-    --card: 270 30% 12%; /* Slightly different dark purple for cards */
-    --card-foreground: 270 15% 90%; /* Soft Purple Foreground for text on cards */
-    --popover: 270 30% 12%; /* Popover background */
-    --popover-foreground: 270 15% 90%; /* Popover text */
-    --primary: 260 40% 50%; /* A more saturated purple for primary elements */
-    --primary-foreground: 240 7% 95%; /* Very light purple almost white for text on primary elements */
-    --secondary: 250 30% 20%; /* A less saturated, darker purple for secondary elements */
-    --secondary-foreground: 260 25% 90%; /* Lighter purple for text on secondary elements */
-    --muted: 250 22% 15%; /* Muted elements background */
-    --muted-foreground: 250 15% 80%; /* Muted text */
-    --accent: 290 100% 40%; /* A vibrant accent color */
-    --accent-foreground: 260 25% 90%; /* Text on accent */
-    --destructive: 345 90% 50%; /* Keep this for destructive actions, adjust hue for purple if needed */
-    --destructive-foreground: 240 7% 95%; /* Foreground for destructive */
-    --border: 250 15% 25%; /* Border color */
-    --input: 250 15% 25%; /* Input fields */
-    --ring: 260 40% 50%; /* Focus ring etc. */
-    --radius: 0.5rem; /* Radius for rounded corners */
-  }
-
-  .dark {
+.dark {
     --background: 270 30% 10%;
     --foreground: 270 15% 90%;
     --card: 270 30% 12%;
@@ -98,7 +39,7 @@
     --secondary-foreground: 260 25% 90%;
     --muted: 250 22% 15%;
     --muted-foreground: 250 15% 80%;
-    --accent: 290 100% 40%;
+    --accent: 260 45% 10%;
     --accent-foreground: 260 25% 90%;
     --destructive: 345 90% 50%;
     --destructive-foreground: 240 7% 95%;
@@ -108,6 +49,14 @@
   }
 }
 
+.logo-gradient {
+  background-image: linear-gradient(to right, hsl(280, 100%, 68%), hsla(214, 100%, 50%, 0.795), hsl(32, 100%, 50%));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari */
+}
+
+
 @layer base {
   * {
     @apply border-border;
@@ -116,4 +65,3 @@
     @apply bg-background text-foreground;
   }
 }
-
